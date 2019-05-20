@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "1eb2bbf9-7729-3296-4a85-3f8f96474be4",
+		"name": "统一账户平台",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "长虹用户注册",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"tmac002\" ,\r\n    \"password\": \"tmac123456\"\r\n}"
+				},
+				"url": {
+					"raw": "https://tuapi.chiq-cloud.com/v2/user/register?accessToken=ZTMxYzNkODcxZDI3MTMyYQ==:4pXpbfjfeDVywE75Fn66TRtnuaQ=:eyJhcGlzIjpbInJlZ2lzdGVyIl0sImV4cGlyZWRUaW1lIjoxNTc3NzIxNjAwMDAwLCJzY29wZSI6IlVTRVIifQ==&livemode=1",
+					"protocol": "https",
+					"host": [
+						"tuapi",
+						"chiq-cloud",
+						"com"
+					],
+					"path": [
+						"v2",
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "accessToken",
+							"value": "ZTMxYzNkODcxZDI3MTMyYQ==:4pXpbfjfeDVywE75Fn66TRtnuaQ=:eyJhcGlzIjpbInJlZ2lzdGVyIl0sImV4cGlyZWRUaW1lIjoxNTc3NzIxNjAwMDAwLCJzY29wZSI6IlVTRVIifQ=="
+						},
+						{
+							"key": "livemode",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "长虹用户注册 Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"tmac002\" ,\r\n    \"password\": \"tmac123456\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/user/register?accessToken={{accessToken}}&livemode={{livemode}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"register"
+					],
+					"query": [
+						{
+							"key": "accessToken",
+							"value": "{{accessToken}}"
+						},
+						{
+							"key": "livemode",
+							"value": "{{livemode}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
